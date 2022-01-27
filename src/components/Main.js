@@ -4,12 +4,38 @@ import PropTypes from 'prop-types';
 
 function Main(props) {
   const [cards, setCards] = useState([
-    { name: 'spongebob', img: require('../assets/spongebob.png') },
-    { name: 'gary', img: require('../assets/gary.png') },
-    { name: 'patrick', img: require('../assets/patrick.png') },
-    { name: 'squidward', img: require('../assets/squidward.png') },
-    { name: 'krabs', img: require('../assets/krabs.png') },
-    { name: 'plankton', img: require('../assets/plankton.png') },
+    {
+      name: 'Anne Lamott AKA Deer Dog',
+      img: require('../assets/AnneLamott.jpg'),
+    },
+    {
+      name: 'Caitlin Doughty AKA Death',
+      img: require('../assets/CaitlinDoughty.jpg'),
+    },
+    {
+      name: 'Damien Echols AKA Fish Bowl Man',
+      img: require('../assets/DamienEchols.jpg'),
+    },
+    {
+      name: 'David Nichtern AKA David',
+      img: require('../assets/DavidNichtern.jpg'),
+    },
+    {
+      name: 'Deneen Fendig AKA Deneen Fendig',
+      img: require('../assets/DeneenFendig.jpg'),
+    },
+    {
+      name: 'Dr. Drew AKA Glasses Man',
+      img: require('../assets/DrDrew.jpg'),
+    },
+    {
+      name: 'Jason Louv AKA Soul Bird',
+      img: require('../assets/JasonLouv.jpg'),
+    },
+    {
+      name: 'Trudy Goodman AKA Trudy The Love Barbarian',
+      img: require('../assets/Trudygoodman.jpg'),
+    },
   ]);
   const [clickedCards, setClickedCards] = useState([]);
   function shuffleArray(array) {
@@ -19,7 +45,7 @@ function Main(props) {
     }
   }
   return (
-    <div className="main-container flex justify-center">
+    <div className="main-container flex justify-center ">
       <Card
         name={cards[0].name}
         img={cards[0].img}
@@ -68,6 +94,24 @@ function Main(props) {
       <Card
         name={cards[5].name}
         img={cards[5].img}
+        clickedCards={clickedCards}
+        currentScore={props.currentScore}
+        highestScore={props.highestScore}
+        setScore={props.setScore}
+        onClick={shuffleArray(cards)}
+      ></Card>
+      <Card
+        name={cards[6].name}
+        img={cards[6].img}
+        clickedCards={clickedCards}
+        currentScore={props.currentScore}
+        highestScore={props.highestScore}
+        setScore={props.setScore}
+        onClick={shuffleArray(cards)}
+      ></Card>
+      <Card
+        name={cards[7].name}
+        img={cards[7].img}
         clickedCards={clickedCards}
         currentScore={props.currentScore}
         highestScore={props.highestScore}

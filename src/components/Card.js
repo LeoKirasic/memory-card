@@ -7,7 +7,6 @@ function Card(props) {
       props.setScore(1);
     } else {
       if (props.clickedCards.find((element) => element === e.target.alt)) {
-        console.log('same card');
         props.clickedCards.length = 0;
         props.setScore(-1);
       } else {
@@ -18,7 +17,7 @@ function Card(props) {
   }
   return (
     <img
-      className="card w-60 border-solid border-2 border-indigo-600"
+      className="card w-48 m-1"
       alt={props.name}
       src={props.img}
       onClick={addCardToArray}
