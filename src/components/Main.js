@@ -12,6 +12,12 @@ function Main(props) {
     { name: 'plankton', img: require('../assets/plankton.png') },
   ]);
   const [clickedCards, setClickedCards] = useState([]);
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
   return (
     <div className="main-container flex justify-center">
       <Card
@@ -21,6 +27,7 @@ function Main(props) {
         currentScore={props.currentScore}
         highestScore={props.highestScore}
         setScore={props.setScore}
+        onClick={shuffleArray(cards)}
       ></Card>
       <Card
         name={cards[1].name}
@@ -29,6 +36,7 @@ function Main(props) {
         currentScore={props.currentScore}
         highestScore={props.highestScore}
         setScore={props.setScore}
+        onClick={shuffleArray(cards)}
       ></Card>
       <Card
         name={cards[2].name}
@@ -37,6 +45,7 @@ function Main(props) {
         currentScore={props.currentScore}
         highestScore={props.highestScore}
         setScore={props.setScore}
+        onClick={shuffleArray(cards)}
       ></Card>
       <Card
         name={cards[3].name}
@@ -45,6 +54,7 @@ function Main(props) {
         currentScore={props.currentScore}
         highestScore={props.highestScore}
         setScore={props.setScore}
+        onClick={shuffleArray(cards)}
       ></Card>
       <Card
         name={cards[4].name}
@@ -53,6 +63,7 @@ function Main(props) {
         currentScore={props.currentScore}
         highestScore={props.highestScore}
         setScore={props.setScore}
+        onClick={shuffleArray(cards)}
       ></Card>
       <Card
         name={cards[5].name}
@@ -61,6 +72,7 @@ function Main(props) {
         currentScore={props.currentScore}
         highestScore={props.highestScore}
         setScore={props.setScore}
+        onClick={shuffleArray(cards)}
       ></Card>
     </div>
   );

@@ -1,13 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import Main from './Main.js';
 function Card(props) {
-  function handleClick(e) {
-    console.log(e.target.alt);
-  }
   function addCardToArray(e) {
     if (props.clickedCards.length === 0) {
-      console.log('empty arr');
       props.clickedCards.push(e.target.alt);
       props.setScore(1);
     } else {
@@ -20,8 +15,6 @@ function Card(props) {
         props.setScore(1);
       }
     }
-
-    console.log(props.clickedCards);
   }
   return (
     <img
