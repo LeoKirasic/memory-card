@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.a80fd776.css",
+    "main.js": "/memory-card/static/js/main.6ca4e959.js",
+    "static/js/787.d6a8b40f.chunk.js": "/memory-card/static/js/787.d6a8b40f.chunk.js",
+    "static/media/AnneLamott.jpg": "/memory-card/static/media/AnneLamott.ae45bc431edbcf080b2b.jpg",
+    "static/media/DeneenFendig.jpg": "/memory-card/static/media/DeneenFendig.b042e24db4704828c57f.jpg",
+    "static/media/Trudygoodman.jpg": "/memory-card/static/media/Trudygoodman.68c34d237d9dd1bf717d.jpg",
+    "static/media/DrDrew.jpg": "/memory-card/static/media/DrDrew.6a3dfc536e7daa114b88.jpg",
+    "static/media/DamienEchols.jpg": "/memory-card/static/media/DamienEchols.b57d4ce1aa159443a966.jpg",
+    "static/media/CaitlinDoughty.jpg": "/memory-card/static/media/CaitlinDoughty.f9494666da136e0f1489.jpg",
+    "static/media/DavidNichtern.jpg": "/memory-card/static/media/DavidNichtern.2f942eb1d14e39b21af4.jpg",
+    "static/media/JasonLouv.jpg": "/memory-card/static/media/JasonLouv.bf4bbca6ed1ae8ce5805.jpg",
+    "index.html": "/memory-card/index.html",
+    "main.a80fd776.css.map": "/memory-card/static/css/main.a80fd776.css.map",
+    "main.6ca4e959.js.map": "/memory-card/static/js/main.6ca4e959.js.map",
+    "787.d6a8b40f.chunk.js.map": "/memory-card/static/js/787.d6a8b40f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a80fd776.css",
+    "static/js/main.6ca4e959.js"
+  ]
+}
