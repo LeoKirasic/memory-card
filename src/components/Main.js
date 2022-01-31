@@ -44,84 +44,21 @@ function Main(props) {
       [array[i], array[j]] = [array[j], array[i]];
     }
   }
+  const cardList = cards.map((card) => (
+    <Card
+      key={card}
+      name={card.name}
+      img={card.img}
+      clickedCards={clickedCards}
+      currentScore={props.currentScore}
+      highestScore={props.highestScore}
+      setScore={props.setScore}
+      onClick={shuffleArray(cards)}
+    />
+  ));
   return (
     <div className="main-container flex flex-col items-center	">
-      <div className="row flex flex-row">
-        <Card
-          name={cards[0].name}
-          img={cards[0].img}
-          clickedCards={clickedCards}
-          currentScore={props.currentScore}
-          highestScore={props.highestScore}
-          setScore={props.setScore}
-          onClick={shuffleArray(cards)}
-        ></Card>
-        <Card
-          name={cards[1].name}
-          img={cards[1].img}
-          clickedCards={clickedCards}
-          currentScore={props.currentScore}
-          highestScore={props.highestScore}
-          setScore={props.setScore}
-          onClick={shuffleArray(cards)}
-        ></Card>
-        <Card
-          name={cards[2].name}
-          img={cards[2].img}
-          clickedCards={clickedCards}
-          currentScore={props.currentScore}
-          highestScore={props.highestScore}
-          setScore={props.setScore}
-          onClick={shuffleArray(cards)}
-        ></Card>
-        <Card
-          name={cards[3].name}
-          img={cards[3].img}
-          clickedCards={clickedCards}
-          currentScore={props.currentScore}
-          highestScore={props.highestScore}
-          setScore={props.setScore}
-          onClick={shuffleArray(cards)}
-        ></Card>
-      </div>
-      <div className="row flex flex-row">
-        <Card
-          name={cards[4].name}
-          img={cards[4].img}
-          clickedCards={clickedCards}
-          currentScore={props.currentScore}
-          highestScore={props.highestScore}
-          setScore={props.setScore}
-          onClick={shuffleArray(cards)}
-        ></Card>
-        <Card
-          name={cards[5].name}
-          img={cards[5].img}
-          clickedCards={clickedCards}
-          currentScore={props.currentScore}
-          highestScore={props.highestScore}
-          setScore={props.setScore}
-          onClick={shuffleArray(cards)}
-        ></Card>
-        <Card
-          name={cards[6].name}
-          img={cards[6].img}
-          clickedCards={clickedCards}
-          currentScore={props.currentScore}
-          highestScore={props.highestScore}
-          setScore={props.setScore}
-          onClick={shuffleArray(cards)}
-        ></Card>
-        <Card
-          name={cards[7].name}
-          img={cards[7].img}
-          clickedCards={clickedCards}
-          currentScore={props.currentScore}
-          highestScore={props.highestScore}
-          setScore={props.setScore}
-          onClick={shuffleArray(cards)}
-        ></Card>
-      </div>
+      <div className="row flex flex-row">{cardList}</div>
     </div>
   );
 }
